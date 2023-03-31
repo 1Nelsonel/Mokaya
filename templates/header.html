@@ -1,0 +1,132 @@
+{% load static %}
+
+<!-- <style>
+    .topbar {
+        background-color: #ffb222 !important;
+    }
+
+</style> -->
+
+<!-- Start header -->
+<header id="header" class="site-header header-style-2">
+    <div class="topbar topbar-style-2">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-8">
+                    <div class="topbar-contact-info-wrapper">
+                        <div class="topbar-contact-info">
+                            <div>
+                                <i class="fa fa-location-arrow"></i>
+                                <div class="details">
+                                    <p>5523 Research Park Drive, Suite 110</p>
+                                    <span>Baltimore, MD 21228</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <div class="details">
+                                    <p>+012 (3546) 547</p>
+                                    <span>contact@industrialinfo.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="get-quote">
+                        <a href="#" class="theme-btn">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </div> <!-- end topbar -->
+
+    <nav class="navigation navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="open-btn">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="site-logo">
+                    <a href="index-2.html"><img src="{% static 'assets/images/logo-2.png' %}" alt></a>
+                </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
+                <button class="close-navbar"><i class="fa fa-close"></i></button>
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="{% url 'home' %}">Home</a>
+                        
+                    </li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="service-single.html">Service single</a></li>
+                            <li><a href="project-single.html">Project single</a></li>
+                            <li><a href="{% url 'teams' %}">Shop</a></li>
+                            
+                            <li><a href="{% url 'faqs' %}">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="{% url 'blogs' %}">Blogs</a></li>
+                            <li><a href="{% url 'blog' %}">Blog detail</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'contacts' %}">Contact</a></li>
+                </ul>
+            </div><!-- end of nav-collapse -->
+
+            <div class="cart-contact">
+                <div class="mini-cart">
+                    <button class="cart-toggle-btn"> <i class="fi flaticon-shopping-cart"></i> Cart (2)
+                    </button>
+
+                    <div class="top-cart-content">
+                        <div class="top-cart-title">
+                            <p>Shopping Cart</p>
+                        </div>
+                        <div class="top-cart-items">
+                            <div class="top-cart-item clearfix">
+                                <div class="top-cart-item-image">
+                                    <a href="#"><img src="{% static 'assets/images/shop/small/1.jpg' %}"
+                                            alt="Blue Round-Neck Tshirt"></a>
+                                </div>
+                                <div class="top-cart-item-des">
+                                    <a href="#">Blue Round-Neck Tshirt</a>
+                                    <span class="top-cart-item-price">$19.99</span>
+                                    <span class="top-cart-item-quantity">x 2</span>
+                                </div>
+                            </div>
+                            <div class="top-cart-item clearfix">
+                                <div class="top-cart-item-image">
+                                    <a href="#"><img src="{% static 'assets/images/shop/small/6.jpg' %}"
+                                            alt="Light Blue Denim Dress"></a>
+                                </div>
+                                <div class="top-cart-item-des">
+                                    <a href="#">Light Blue Denim Dress</a>
+                                    <span class="top-cart-item-price">$24.99</span>
+                                    <span class="top-cart-item-quantity">x 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-cart-action clearfix">
+                            <span class="fleft top-checkout-price">$114.95</span>
+                            <a href="#" class="theme-btn">View Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of container -->
+    </nav> <!-- end navigation -->
+</header>
+<!-- end of header -->
